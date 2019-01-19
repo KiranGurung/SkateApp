@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		5884C48221F305F40022BFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48121F305F40022BFD6 /* AppDelegate.swift */; };
-		5884C48421F305F40022BFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48321F305F40022BFD6 /* ViewController.swift */; };
+		5884C48421F305F40022BFD6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48321F305F40022BFD6 /* StartViewController.swift */; };
 		5884C48721F305F40022BFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48521F305F40022BFD6 /* Main.storyboard */; };
 		5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */; };
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
+		9A1E370421F3083E002F0BE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E370321F3083E002F0BE9 /* LoginViewController.swift */; };
 		FA58CF9721F3066200957324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA58CF9621F3066200957324 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5884C47E21F305F40022BFD6 /* SkateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5884C48121F305F40022BFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5884C48321F305F40022BFD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5884C48321F305F40022BFD6 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		5884C48621F305F40022BFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5884C48921F305F40022BFD6 /* SkateApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkateApp.xcdatamodel; sourceTree = "<group>"; };
 		5884C48B21F305F90022BFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5884C48E21F305F90022BFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5884C49021F305F90022BFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1E370321F3083E002F0BE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA58CF9621F3066200957324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +62,8 @@
 			children = (
 				5884C48121F305F40022BFD6 /* AppDelegate.swift */,
 				FA58CF9621F3066200957324 /* GoogleService-Info.plist */,
-				5884C48321F305F40022BFD6 /* ViewController.swift */,
+				5884C48321F305F40022BFD6 /* StartViewController.swift */,
+				9A1E370321F3083E002F0BE9 /* LoginViewController.swift */,
 				5884C48521F305F40022BFD6 /* Main.storyboard */,
 				5884C48B21F305F90022BFD6 /* Assets.xcassets */,
 				5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */,
@@ -142,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5884C48421F305F40022BFD6 /* ViewController.swift in Sources */,
+				9A1E370421F3083E002F0BE9 /* LoginViewController.swift in Sources */,
+				5884C48421F305F40022BFD6 /* StartViewController.swift in Sources */,
 				5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */,
 				5884C48221F305F40022BFD6 /* AppDelegate.swift in Sources */,
 			);
