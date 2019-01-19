@@ -13,6 +13,7 @@
 		5884C46921F2FA140022BFD6 /* SkateApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5884C46721F2FA140022BFD6 /* SkateApp.xcdatamodeld */; };
 		5884C46B21F2FA190022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C46A21F2FA190022BFD6 /* Assets.xcassets */; };
 		5884C46E21F2FA190022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C46C21F2FA190022BFD6 /* LaunchScreen.storyboard */; };
+		FA58CF9521F2FFA900957324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA58CF9421F2FFA900957324 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5884C46A21F2FA190022BFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5884C46D21F2FA190022BFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5884C46F21F2FA190022BFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA58CF9421F2FFA900957324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		5884C45F21F2FA140022BFD6 /* SkateApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA58CF9421F2FFA900957324 /* GoogleService-Info.plist */,
 				5884C46021F2FA140022BFD6 /* AppDelegate.swift */,
 				5884C46221F2FA140022BFD6 /* ViewController.swift */,
 				5884C46421F2FA140022BFD6 /* Main.storyboard */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5884C46E21F2FA190022BFD6 /* LaunchScreen.storyboard in Resources */,
+				FA58CF9521F2FFA900957324 /* GoogleService-Info.plist in Resources */,
 				5884C46B21F2FA190022BFD6 /* Assets.xcassets in Resources */,
 				5884C46621F2FA140022BFD6 /* Main.storyboard in Resources */,
 			);
