@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E95EEF08E73D74EBA7FA0AB /* libPods-SkateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */; };
 		5884C48221F305F40022BFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48121F305F40022BFD6 /* AppDelegate.swift */; };
 		5884C48421F305F40022BFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48321F305F40022BFD6 /* ViewController.swift */; };
 		5884C48721F305F40022BFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48521F305F40022BFD6 /* Main.storyboard */; };
 		5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */; };
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
-		CFA34AFF35ECD87D99DA25B9 /* Pods_SkateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D098E5942D0E338FB691501 /* Pods_SkateApp.framework */; };
-		FA58CF9721F3066200957324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA58CF9621F3066200957324 /* GoogleService-Info.plist */; };
+		5884C49721F30C380022BFD6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5884C49621F30C380022BFD6 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		5884C48B21F305F90022BFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5884C48E21F305F90022BFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5884C49021F305F90022BFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D098E5942D0E338FB691501 /* Pods_SkateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5884C49621F30C380022BFD6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83E9D12B051ECCFB0478563 /* Pods-SkateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp.release.xcconfig"; sourceTree = "<group>"; };
-		FA58CF9621F3066200957324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA34AFF35ECD87D99DA25B9 /* Pods_SkateApp.framework in Frameworks */,
+				2E95EEF08E73D74EBA7FA0AB /* libPods-SkateApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		0B837CC883854D9E77DF9EE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D098E5942D0E338FB691501 /* Pods_SkateApp.framework */,
+				72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				5884C48121F305F40022BFD6 /* AppDelegate.swift */,
-				FA58CF9621F3066200957324 /* GoogleService-Info.plist */,
 				5884C48321F305F40022BFD6 /* ViewController.swift */,
 				5884C48521F305F40022BFD6 /* Main.storyboard */,
 				5884C48B21F305F90022BFD6 /* Assets.xcassets */,
@@ -88,6 +87,7 @@
 		C5B475498984AF99BE82DA57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				5884C49621F30C380022BFD6 /* Podfile */,
 				07734CEEF3650A1FE1E62F07 /* Pods-SkateApp.debug.xcconfig */,
 				F83E9D12B051ECCFB0478563 /* Pods-SkateApp.release.xcconfig */,
 			);
@@ -105,7 +105,6 @@
 				5884C47A21F305F40022BFD6 /* Sources */,
 				5884C47B21F305F40022BFD6 /* Frameworks */,
 				5884C47C21F305F40022BFD6 /* Resources */,
-				479B16D1EBD98B00E7AE7F81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,8 +153,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5884C49721F30C380022BFD6 /* Podfile in Resources */,
 				5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */,
-				FA58CF9721F3066200957324 /* GoogleService-Info.plist in Resources */,
 				5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */,
 				5884C48721F305F40022BFD6 /* Main.storyboard in Resources */,
 			);
@@ -164,44 +163,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		479B16D1EBD98B00E7AE7F81 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EA762F0906B66CF9A4F4343F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SkateApp-checkManifestLockResult.txt",
 			);
