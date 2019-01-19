@@ -13,6 +13,7 @@
 		5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */; };
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
+		FA58CF9721F3066200957324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA58CF9621F3066200957324 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5884C48B21F305F90022BFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5884C48E21F305F90022BFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5884C49021F305F90022BFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA58CF9621F3066200957324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5884C48121F305F40022BFD6 /* AppDelegate.swift */,
+				FA58CF9621F3066200957324 /* GoogleService-Info.plist */,
 				5884C48321F305F40022BFD6 /* ViewController.swift */,
 				5884C48521F305F40022BFD6 /* Main.storyboard */,
 				5884C48B21F305F90022BFD6 /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */,
+				FA58CF9721F3066200957324 /* GoogleService-Info.plist in Resources */,
 				5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */,
 				5884C48721F305F40022BFD6 /* Main.storyboard in Resources */,
 			);
