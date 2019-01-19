@@ -13,14 +13,14 @@
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
 		5884C49721F30C380022BFD6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5884C49621F30C380022BFD6 /* Podfile */; };
+		FA8F572121F3DB34007B141D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572021F3DB33007B141D /* HomeViewController.swift */; };
+		FA8F572321F3DB9E007B141D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572221F3DB9E007B141D /* PreviewViewController.swift */; };
+		FA8F572521F3DBA7007B141D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572421F3DBA7007B141D /* LoginViewController.swift */; };
+		FA8F572721F3DBAD007B141D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572621F3DBAD007B141D /* PreviewViewController.swift */; };
+		FA8F572921F3DBB2007B141D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572821F3DBB2007B141D /* SignUpViewController.swift */; };
+		FA8F572B21F3DBB8007B141D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572A21F3DBB8007B141D /* StartViewController.swift */; };
+		FA8F572D21F3DBCF007B141D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8F572C21F3DBCF007B141D /* Main.storyboard */; };
 		FABE06C221F3CB7B00F5937A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABE06C121F3CB7A00F5937A /* GoogleService-Info.plist */; };
-		FABE06C521F3CE1500F5937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE06C321F3CE1500F5937A /* Main.storyboard */; };
-		FABE06CA21F3CE3800F5937A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE06C621F3CE3800F5937A /* LoginViewController.swift */; };
-		FABE06CB21F3CE3800F5937A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE06C721F3CE3800F5937A /* SignUpViewController.swift */; };
-		FABE06CC21F3CE3800F5937A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE06C821F3CE3800F5937A /* StartViewController.swift */; };
-		FABE06CD21F3CE3800F5937A /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE06C921F3CE3800F5937A /* PreviewViewController.swift */; };
-		FABE06D121F3CEB200F5937A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE06D021F3CEB200F5937A /* HomeViewController.swift */; };
-		FADA8E8C21F3CF9A00C2A087 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA8E8B21F3CF9A00C2A087 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +34,14 @@
 		5884C49621F30C380022BFD6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83E9D12B051ECCFB0478563 /* Pods-SkateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA8F572021F3DB33007B141D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA8F572221F3DB9E007B141D /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		FA8F572421F3DBA7007B141D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA8F572621F3DBAD007B141D /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		FA8F572821F3DBB2007B141D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FA8F572A21F3DBB8007B141D /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		FA8F572C21F3DBCF007B141D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FABE06C121F3CB7A00F5937A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FABE06C421F3CE1500F5937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		FABE06C621F3CE3800F5937A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/LoginViewController.swift"; sourceTree = "<group>"; };
-		FABE06C721F3CE3800F5937A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/SignUpViewController.swift"; sourceTree = "<group>"; };
-		FABE06C821F3CE3800F5937A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/StartViewController.swift"; sourceTree = "<group>"; };
-		FABE06C921F3CE3800F5937A /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/PreviewViewController.swift"; sourceTree = "<group>"; };
-		FABE06D021F3CEB200F5937A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/HomeViewController.swift"; sourceTree = "<group>"; };
-		FADA8E8B21F3CF9A00C2A087 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = "../../../ios-tutorials/Snapchat_Camera/Snapchat Camera/PreviewViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +86,17 @@
 			isa = PBXGroup;
 			children = (
 				FABE06C121F3CB7A00F5937A /* GoogleService-Info.plist */,
+				FA8F572021F3DB33007B141D /* HomeViewController.swift */,
+				FA8F572C21F3DBCF007B141D /* Main.storyboard */,
 				5884C48121F305F40022BFD6 /* AppDelegate.swift */,
-				FABE06D021F3CEB200F5937A /* HomeViewController.swift */,
-				FABE06C321F3CE1500F5937A /* Main.storyboard */,
 				5884C48B21F305F90022BFD6 /* Assets.xcassets */,
-				FADA8E8B21F3CF9A00C2A087 /* PreviewViewController.swift */,
+				FA8F572421F3DBA7007B141D /* LoginViewController.swift */,
+				FA8F572221F3DB9E007B141D /* PreviewViewController.swift */,
+				FA8F572A21F3DBB8007B141D /* StartViewController.swift */,
 				5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */,
+				FA8F572621F3DBAD007B141D /* PreviewViewController.swift */,
 				5884C49021F305F90022BFD6 /* Info.plist */,
-				FABE06C621F3CE3800F5937A /* LoginViewController.swift */,
-				FABE06C921F3CE3800F5937A /* PreviewViewController.swift */,
-				FABE06C721F3CE3800F5937A /* SignUpViewController.swift */,
-				FABE06C821F3CE3800F5937A /* StartViewController.swift */,
+				FA8F572821F3DBB2007B141D /* SignUpViewController.swift */,
 				5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */,
 			);
 			path = SkateApp;
@@ -172,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5884C49721F30C380022BFD6 /* Podfile in Resources */,
-				FABE06C521F3CE1500F5937A /* Main.storyboard in Resources */,
+				FA8F572D21F3DBCF007B141D /* Main.storyboard in Resources */,
 				5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */,
 				FABE06C221F3CB7B00F5937A /* GoogleService-Info.plist in Resources */,
 				5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */,
@@ -207,14 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABE06CC21F3CE3800F5937A /* StartViewController.swift in Sources */,
-				FABE06CA21F3CE3800F5937A /* LoginViewController.swift in Sources */,
+				FA8F572521F3DBA7007B141D /* LoginViewController.swift in Sources */,
 				5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */,
-				FABE06D121F3CEB200F5937A /* HomeViewController.swift in Sources */,
-				FABE06CB21F3CE3800F5937A /* SignUpViewController.swift in Sources */,
+				FA8F572121F3DB34007B141D /* HomeViewController.swift in Sources */,
 				5884C48221F305F40022BFD6 /* AppDelegate.swift in Sources */,
-				FABE06CD21F3CE3800F5937A /* PreviewViewController.swift in Sources */,
-				FADA8E8C21F3CF9A00C2A087 /* PreviewViewController.swift in Sources */,
+				FA8F572B21F3DBB8007B141D /* StartViewController.swift in Sources */,
+				FA8F572921F3DBB2007B141D /* SignUpViewController.swift in Sources */,
+				FA8F572321F3DB9E007B141D /* PreviewViewController.swift in Sources */,
+				FA8F572721F3DBAD007B141D /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,14 +227,6 @@
 				5884C48E21F305F90022BFD6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		FABE06C321F3CE1500F5937A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FABE06C421F3CE1500F5937A /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
