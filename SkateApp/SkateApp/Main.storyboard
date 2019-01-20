@@ -321,7 +321,7 @@
                         <outlet property="password" destination="6xx-PV-fmG" id="Jyf-lt-RKF"/>
                         <outlet property="passwordConfirm" destination="ACP-Bk-ncP" id="o72-Gl-lIM"/>
                         <outlet property="signUpButton" destination="58g-uC-cYt" id="IVk-fK-7MQ"/>
-                        <segue destination="7k7-nF-YbN" kind="presentation" identifier="signupToInfo" id="QeK-5Q-BZ2"/>
+                        <segue destination="7k7-nF-YbN" kind="modal" identifier="signupToInfo" id="1YB-q2-kfT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXN-6j-zlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlR-Pg-BPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="1660"/>
+            <point key="canvasLocation" x="1646" y="1660"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m3p-Tw-OSB">
@@ -482,6 +482,6 @@
         <image name="Stop-Motion" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6nV-tB-27b"/>
+        <segue reference="Buo-RJ-ndX"/>
     </inferredMetricsTieBreakers>
 </document>

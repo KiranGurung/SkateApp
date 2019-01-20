@@ -57,7 +57,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate {
             print("Error, please wait")
         }
         else{
-            self.ref.child("users").child(Auth.auth().currentUser!.uid).setValue(["name": name, "age": age, "hometown": hometown, "stance": stance, "bio": bio, "points": 100, "wins": 0])
+        self.ref.child("users").child(Auth.auth().currentUser!.uid).setValue(["name": name, "age": age, "hometown": hometown, "stance": stance, "bio": bio, "points": 100, "wins": 0])
             self.performSegue(withIdentifier: "infoToHome", sender: self)
         }
     }
