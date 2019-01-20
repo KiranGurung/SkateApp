@@ -14,23 +14,36 @@ private let reuseIdentifier = "challengeCellWithNib"
 class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var userGames = [NSDictionary]()
+    let userName = "John"
+    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let userName = "John"
-        var ref: DatabaseReference!
         var dataLoaded = 0
         
+        print(userGames)
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Register cell classes
+//        collectionView?.backgroundColor = .black
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "challengeCellWithNib")
+        collectionView?.register(UINib(nibName: "challengeCellWithNib", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
         ref = Database.database().reference()
         ref.child("games").observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let games = snapshot.value as? NSDictionary
-//            let username = value?["username"] as? String ?? ""
-//            let user = User(username: username)
+            //            let username = value?["username"] as? String ?? ""
+            //            let user = User(username: username)
             if((games) != nil){
-                for(key, game) in games!{
+                for(_, game) in games!{
                     if let gameData = game as? NSDictionary{
-                        if(gameData["playerOne"] as! String == userName || gameData["playerTwo"] as! String == userName){
+                        if(gameData["playerOne"] as! String == self.userName || gameData["playerTwo"] as! String == self.userName){
                             print(gameData)
                             self.userGames.append(gameData)
                         }
@@ -39,23 +52,15 @@ class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout
                     }
                 }
             }
-            dataLoaded = 1
+            print(self.userGames)
+            self.collectionView!.reloadData()
+
             // ...
         }) { (error) in
             print(error.localizedDescription)
-            dataLoaded = 1
         }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-//        collectionView?.backgroundColor = .black
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "challengeCellWithNib")
-        collectionView?.register(UINib(nibName: "challengeCellWithNib", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -83,11 +88,21 @@ class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! challengeCellWithNib
         
         // Configure the cell
-    
-        cell.friendName.text = "Nyjah"
-        cell.timeStamp.text = "2:32PM"
-        cell.userLetters.text = "HORS"
-        cell.friendLetters.text = "HOR"
+        var playerNum = 0
+
+        print(indexPath.row)
+        if(userGames[indexPath.row]["playerOne"] as! String == userName){
+            cell.friendName.text = userGames[indexPath.row]["playerTwo"] as? String
+            cell.userLetters.text = userGames[indexPath.row]["lettersOne"] as? String
+            cell.friendLetters.text = userGames[indexPath.row]["lettersTwo"] as? String
+            playerNum = 1
+        }else{
+            cell.friendName.text = userGames[indexPath.row]["playerOne"] as? String
+            cell.userLetters.text = userGames[indexPath.row]["lettersTwo"] as? String
+            cell.friendLetters.text = userGames[indexPath.row]["lettersOne"] as? String
+            playerNum = 2
+        }
+        cell.timeStamp.text = userGames[indexPath.row]["timeStarted"] as? String
         cell.challengeButton.addTarget(self, action: #selector(viewChallenge), for: .touchDown)
         return cell
     }
@@ -95,7 +110,7 @@ class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout
     @objc func viewChallenge(sender: UIButton!) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! CameraController
         self.present(nextViewController, animated:true, completion:nil)
     }
     
