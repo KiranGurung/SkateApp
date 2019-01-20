@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         else{
             Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
                 if error == nil {
-                   self.performSegue(withIdentifier: "signupToHome", sender: self)
+                   self.performSegue(withIdentifier: "signUpToInfo", sender: self)
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -46,21 +46,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                     
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
-                }
-            }
-            
-            
-            
-            let usersDB = Database.database().reference().child("users");
-            let userDictionary : NSDictionary = ["UserID" : Auth.auth().currentUser!.uid as String!]
-            
-            usersDB.childByAutoId().setValue(userDictionary) {
-                (error, ref) in
-                if error != nil {
-                    print(error!);
-                }
-                else {
-                    print("User saved successfully!");
                 }
             }
         }

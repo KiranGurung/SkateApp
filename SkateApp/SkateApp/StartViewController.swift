@@ -23,7 +23,7 @@ class StartViewController: UIViewController {
     }
     func addGradient() {
         gradient = CAGradientLayer()
-        let startColor = UIColor(red: 135/255, green: 224/255, blue: 253/255, alpha: 1)
+        let startColor = UIColor(red: 5/255, green: 171/255, blue: 224/255, alpha: 1)
         let endColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         gradient?.colors = [startColor.cgColor,endColor.cgColor]
         gradient?.startPoint = CGPoint(x: 0, y: 0)

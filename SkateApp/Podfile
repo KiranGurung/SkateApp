@@ -8,7 +8,8 @@ target 'SkateApp' do
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
-
+    pod 'FBSDKLoginKit'
+    
   # Pods for SkateApp
 
 end
