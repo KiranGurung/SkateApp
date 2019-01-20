@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2E95EEF08E73D74EBA7FA0AB /* libPods-SkateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */; };
+		5853B1A521F46E2B007E88F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853B1A421F46E2B007E88F2 /* AppDelegate.swift */; };
 		5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */; };
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
 		5884C49721F30C380022BFD6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5884C49621F30C380022BFD6 /* Podfile */; };
 		9AED376D21F455BF00DBF613 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AED376C21F455BE00DBF613 /* GoogleService-Info.plist */; };
 		9AED377421F4562A00DBF613 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED376E21F4562900DBF613 /* Challenges.swift */; };
-		9AED377521F4562A00DBF613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED376F21F4562900DBF613 /* AppDelegate.swift */; };
 		9AED377621F4562A00DBF613 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED377021F4562900DBF613 /* CameraController.swift */; };
 		9AED377721F4562A00DBF613 /* ChallengeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED377121F4562900DBF613 /* ChallengeCells.swift */; };
 		9AED377821F4562A00DBF613 /* challengeCellWithNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED377221F4562A00DBF613 /* challengeCellWithNib.xib */; };
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		07734CEEF3650A1FE1E62F07 /* Pods-SkateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5853B1A421F46E2B007E88F2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5884C47E21F305F40022BFD6 /* SkateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5884C48921F305F40022BFD6 /* SkateApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkateApp.xcdatamodel; sourceTree = "<group>"; };
 		5884C48B21F305F90022BFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AED376C21F455BE00DBF613 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9AED376E21F4562900DBF613 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
-		9AED376F21F4562900DBF613 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../holderman/AppDelegate.swift; sourceTree = "<group>"; };
 		9AED377021F4562900DBF613 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		9AED377121F4562900DBF613 /* ChallengeCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCells.swift; sourceTree = "<group>"; };
 		9AED377221F4562A00DBF613 /* challengeCellWithNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = challengeCellWithNib.xib; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 				5884C48B21F305F90022BFD6 /* Assets.xcassets */,
 				FA8F572421F3DBA7007B141D /* LoginViewController.swift */,
 				FA8F572221F3DB9E007B141D /* PreviewViewController.swift */,
+				5853B1A421F46E2B007E88F2 /* AppDelegate.swift */,
 				FA8F572A21F3DBB8007B141D /* StartViewController.swift */,
-				9AED376F21F4562900DBF613 /* AppDelegate.swift */,
 				9AED377021F4562900DBF613 /* CameraController.swift */,
 				9AED377121F4562900DBF613 /* ChallengeCells.swift */,
 				9AED377321F4562A00DBF613 /* challengeCellWithNib.swift */,
@@ -208,15 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp-resources.sh",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
 			);
@@ -230,13 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AED377521F4562A00DBF613 /* AppDelegate.swift in Sources */,
 				9AED377921F4562A00DBF613 /* challengeCellWithNib.swift in Sources */,
 				FA8F572521F3DBA7007B141D /* LoginViewController.swift in Sources */,
 				5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */,
@@ -278,6 +269,7 @@
 				9AED377621F4562A00DBF613 /* CameraController.swift in Sources */,
 				FA8F572921F3DBB2007B141D /* SignUpViewController.swift in Sources */,
 				9AED377721F4562A00DBF613 /* ChallengeCells.swift in Sources */,
+				5853B1A521F46E2B007E88F2 /* AppDelegate.swift in Sources */,
 				FA89FC9D21F435DA0009EB67 /* ProfileViewController.swift in Sources */,
 				9AED377421F4562A00DBF613 /* Challenges.swift in Sources */,
 				FA30959F21F3F208003A19A6 /* InfoViewController.swift in Sources */,
