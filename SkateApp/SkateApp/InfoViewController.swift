@@ -19,6 +19,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var hometownTextField: UITextField!
     @IBOutlet weak var stanceTextField: UITextField!
     @IBOutlet weak var bioTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate {
         hometownTextField.delegate = self
         stanceTextField.delegate = self
         bioTextField.delegate = self
+        usernameTextField.delegate = self
     }
     
     @IBAction func register(_ sender: Any) {
@@ -36,30 +38,42 @@ class InfoViewController: UIViewController, UITextFieldDelegate {
         let hometown = hometownTextField.text
         let stance = stanceTextField.text
         let bio = bioTextField.text
+        let username = usernameTextField.text
         
-        if name?.isEmpty == true{
-            let alertController = UIAlertController(title: "Name Invalid", message: "Please Enter A Valid Name", preferredStyle: .alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            
-            alertController.addAction(defaultAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
-        
-        if Int(age!) == nil{
-            let alertController = UIAlertController(title: "Age Invalid", message: "Please Enter A Valid Age", preferredStyle: .alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            
-            alertController.addAction(defaultAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
-        
-        if Auth.auth().currentUser == nil{
-            print("Error, please wait")
-        }
-        else{
-        self.ref.child("users").child(Auth.auth().currentUser!.uid).setValue(["name": name, "age": age, "hometown": hometown, "stance": stance, "bio": bio, "points": 100, "wins": 0])
-            self.performSegue(withIdentifier: "infoToHome", sender: self)
-        }
+        ref.child("usernames").child(username!).observeSingleEvent(of: .value, with: { (snapshot) in
+            if snapshot.exists(){
+                let alertController = UIAlertController(title: "Username Taken", message: "Please Enter Another Username", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }else{
+                if name?.isEmpty == true{
+                    let alertController = UIAlertController(title: "Name Invalid", message: "Please Enter A Valid Name", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                    
+                else if Int(age!) == nil{
+                    let alertController = UIAlertController(title: "Age Invalid", message: "Please Enter A Valid Age", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                    
+                else if Auth.auth().currentUser == nil{
+                    print("Error, please wait")
+                }
+                else{
+                    self.ref.child("users").child(Auth.auth().currentUser!.uid).setValue(["name": name, "age": age, "hometown": hometown, "stance": stance, "bio": bio, "points": 100, "wins": 0, "games":0])
+                    self.ref.child("usernames").child(username!).setValue(Auth.auth().currentUser!.uid)
+                    self.performSegue(withIdentifier: "infoToHome", sender: self)
+                }
+            }
+        })
     }
     
     func addGradient() {
