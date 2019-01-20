@@ -110,7 +110,7 @@ class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout
     @objc func viewChallenge(sender: UIButton!) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! CameraController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "CameraController") as! CameraController
         self.present(nextViewController, animated:true, completion:nil)
     }
     

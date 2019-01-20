@@ -480,7 +480,7 @@
         <!--Camera Controller-->
         <scene sceneID="PXs-25-rTa">
             <objects>
-                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="qFo-7k-Nla" customClass="CameraController" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CameraController" storyboardIdentifier="CameraController" id="qFo-7k-Nla" customClass="CameraController" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVq-na-9DQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -536,7 +536,7 @@
         <!--Challenges-->
         <scene sceneID="vN3-CB-vhy">
             <objects>
-                <collectionViewController id="PwJ-bV-gY3" customClass="Challenges" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Challenges" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PwJ-bV-gY3" customClass="Challenges" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eYT-zY-esS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

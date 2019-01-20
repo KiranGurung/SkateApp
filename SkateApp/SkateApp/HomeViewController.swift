@@ -28,6 +28,14 @@ class HomeViewController: UIViewController {
         }) { (error) in
             print(error.localizedDescription)
         }
+        playButton.addTarget(self, action: #selector(viewGames), for: .touchDown)
+    }
+    
+    @objc func viewGames(sender: UIButton!) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Challenges") as! Challenges
+        self.present(nextViewController, animated:true, completion:nil)
     }
     
     @IBAction func logOutAction(_ sender: Any) {
