@@ -7,14 +7,44 @@
 //
 
 import UIKit
+import Firebase
 
 private let reuseIdentifier = "challengeCellWithNib"
 
 class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    var userGames = [NSDictionary]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let userName = "John"
+        var ref: DatabaseReference!
+        var dataLoaded = 0
+        
+        ref = Database.database().reference()
+        ref.child("games").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let games = snapshot.value as? NSDictionary
+//            let username = value?["username"] as? String ?? ""
+//            let user = User(username: username)
+            if((games) != nil){
+                for(key, game) in games!{
+                    if let gameData = game as? NSDictionary{
+                        if(gameData["playerOne"] as! String == userName || gameData["playerTwo"] as! String == userName){
+                            print(gameData)
+                            self.userGames.append(gameData)
+                        }
+                    } else{
+                        print("Not a dict")
+                    }
+                }
+            }
+            dataLoaded = 1
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+            dataLoaded = 1
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -46,7 +76,7 @@ class Challenges: UICollectionViewController, UICollectionViewDelegateFlowLayout
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 4
+        return userGames.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
