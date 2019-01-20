@@ -108,7 +108,6 @@
                         <outlet property="captureButton" destination="TG4-c3-hqF" id="Rz8-Pc-hmq"/>
                         <outlet property="doneButton" destination="DLA-nz-Okv" id="0me-Rw-nUe"/>
                         <outlet property="flashButton" destination="9bk-GI-Sge" id="aQT-gx-1NV"/>
-                        <segue destination="OaE-MT-OLa" kind="presentation" identifier="showPreview" id="fU7-4G-eXG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -308,6 +307,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpAction:" destination="cXu-p3-exh" eventType="touchUpInside" id="OSz-Mq-13D"/>
+                                    <segue destination="7k7-nF-YbN" kind="modal" id="xZz-HI-Ypb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -342,69 +342,26 @@
                         <outlet property="password" destination="6xx-PV-fmG" id="Jyf-lt-RKF"/>
                         <outlet property="passwordConfirm" destination="ACP-Bk-ncP" id="o72-Gl-lIM"/>
                         <outlet property="signUpButton" destination="58g-uC-cYt" id="IVk-fK-7MQ"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signupToHome" id="vAk-vZ-YRn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXN-6j-zlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1087.2" y="1660.344827586207"/>
         </scene>
-        <!--Preview View Controller-->
-        <scene sceneID="n3I-Wj-ZfY">
+        <!--Info View Controller-->
+        <scene sceneID="D0i-gZ-cwM">
             <objects>
-                <viewController id="OaE-MT-OLa" customClass="PreviewViewController" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Imb-iQ-qbs">
+                <viewController id="7k7-nF-YbN" customClass="InfoViewController" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6A-Oc-S8w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i3v-1b-tD2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fX-RJ-Xyo">
-                                <rect key="frame" x="317" y="44" width="50" height="31"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.28624629969999998" green="0.28629258279999997" blue="0.28623616699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveAction:" destination="OaE-MT-OLa" eventType="touchUpInside" id="kua-e5-BLo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNE-jZ-Bk4">
-                                <rect key="frame" x="8" y="44" width="57" height="31"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleColor" red="0.28624629969999998" green="0.28629258279999997" blue="0.28623616699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="closeAction:" destination="OaE-MT-OLa" eventType="touchUpInside" id="17J-o2-ox0"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="KfH-ui-UE1" firstAttribute="trailing" secondItem="3fX-RJ-Xyo" secondAttribute="trailing" constant="8" id="0VF-Tm-gVs"/>
-                            <constraint firstItem="FNE-jZ-Bk4" firstAttribute="top" secondItem="KfH-ui-UE1" secondAttribute="top" id="CzZ-wm-LgV"/>
-                            <constraint firstAttribute="bottom" secondItem="i3v-1b-tD2" secondAttribute="bottom" id="TWn-gU-bR2"/>
-                            <constraint firstItem="3fX-RJ-Xyo" firstAttribute="top" secondItem="KfH-ui-UE1" secondAttribute="top" id="Ts0-0g-8Sm"/>
-                            <constraint firstItem="FNE-jZ-Bk4" firstAttribute="leading" secondItem="KfH-ui-UE1" secondAttribute="leading" constant="8" id="VF3-mr-prq"/>
-                            <constraint firstAttribute="trailing" secondItem="i3v-1b-tD2" secondAttribute="trailing" id="anV-BI-lvd"/>
-                            <constraint firstItem="i3v-1b-tD2" firstAttribute="top" secondItem="Imb-iQ-qbs" secondAttribute="top" id="jJc-p1-r9Q"/>
-                            <constraint firstItem="i3v-1b-tD2" firstAttribute="leading" secondItem="Imb-iQ-qbs" secondAttribute="leading" id="sx5-BL-yfd"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="KfH-ui-UE1"/>
+                        <viewLayoutGuide key="safeArea" id="H3g-z7-ZgB"/>
                     </view>
-                    <connections>
-                        <outlet property="preview" destination="i3v-1b-tD2" id="pdF-sO-wVW"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8AQ-7W-bBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlR-Pg-BPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4078" y="1229"/>
+            <point key="canvasLocation" x="2065" y="1646"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m3p-Tw-OSB">

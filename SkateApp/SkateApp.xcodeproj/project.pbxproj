@@ -13,10 +13,10 @@
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
 		5884C49721F30C380022BFD6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5884C49621F30C380022BFD6 /* Podfile */; };
+		FA30959F21F3F208003A19A6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30959E21F3F208003A19A6 /* InfoViewController.swift */; };
 		FA8F572121F3DB34007B141D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572021F3DB33007B141D /* HomeViewController.swift */; };
 		FA8F572321F3DB9E007B141D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572221F3DB9E007B141D /* PreviewViewController.swift */; };
 		FA8F572521F3DBA7007B141D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572421F3DBA7007B141D /* LoginViewController.swift */; };
-		FA8F572721F3DBAD007B141D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572621F3DBAD007B141D /* PreviewViewController.swift */; };
 		FA8F572921F3DBB2007B141D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572821F3DBB2007B141D /* SignUpViewController.swift */; };
 		FA8F572B21F3DBB8007B141D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F572A21F3DBB8007B141D /* StartViewController.swift */; };
 		FA8F572D21F3DBCF007B141D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8F572C21F3DBCF007B141D /* Main.storyboard */; };
@@ -34,10 +34,10 @@
 		5884C49621F30C380022BFD6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83E9D12B051ECCFB0478563 /* Pods-SkateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA30959E21F3F208003A19A6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		FA8F572021F3DB33007B141D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA8F572221F3DB9E007B141D /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		FA8F572421F3DBA7007B141D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FA8F572621F3DBAD007B141D /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		FA8F572821F3DBB2007B141D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA8F572A21F3DBB8007B141D /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FA8F572C21F3DBCF007B141D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -94,10 +94,10 @@
 				FA8F572221F3DB9E007B141D /* PreviewViewController.swift */,
 				FA8F572A21F3DBB8007B141D /* StartViewController.swift */,
 				5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */,
-				FA8F572621F3DBAD007B141D /* PreviewViewController.swift */,
 				5884C49021F305F90022BFD6 /* Info.plist */,
 				FA8F572821F3DBB2007B141D /* SignUpViewController.swift */,
 				5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */,
+				FA30959E21F3F208003A19A6 /* InfoViewController.swift */,
 			);
 			path = SkateApp;
 			sourceTree = "<group>";
@@ -213,8 +213,8 @@
 				5884C48221F305F40022BFD6 /* AppDelegate.swift in Sources */,
 				FA8F572B21F3DBB8007B141D /* StartViewController.swift in Sources */,
 				FA8F572921F3DBB2007B141D /* SignUpViewController.swift in Sources */,
+				FA30959F21F3F208003A19A6 /* InfoViewController.swift in Sources */,
 				FA8F572321F3DB9E007B141D /* PreviewViewController.swift in Sources */,
-				FA8F572721F3DBAD007B141D /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

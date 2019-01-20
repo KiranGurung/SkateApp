@@ -48,6 +48,21 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                     self.present(alertController, animated: true, completion: nil)
                 }
             }
+            
+            
+            
+            let usersDB = Database.database().reference().child("users");
+            let userDictionary : NSDictionary = ["UserID" : Auth.auth().currentUser!.uid as String!]
+            
+            usersDB.childByAutoId().setValue(userDictionary) {
+                (error, ref) in
+                if error != nil {
+                    print(error!);
+                }
+                else {
+                    print("User saved successfully!");
+                }
+            }
         }
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
