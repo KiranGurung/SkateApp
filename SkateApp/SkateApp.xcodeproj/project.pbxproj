@@ -15,6 +15,10 @@
 		5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48B21F305F90022BFD6 /* Assets.xcassets */; };
 		5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */; };
 		5884C49721F30C380022BFD6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5884C49621F30C380022BFD6 /* Podfile */; };
+		9A1E370C21F3DB9A002F0BE9 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E370B21F3DB9A002F0BE9 /* Challenges.swift */; };
+		9A1E370E21F3DD86002F0BE9 /* ChallengeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E370D21F3DD86002F0BE9 /* ChallengeCells.swift */; };
+		9A1E371121F3F443002F0BE9 /* challengeCellWithNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E370F21F3F443002F0BE9 /* challengeCellWithNib.swift */; };
+		9A1E371221F3F443002F0BE9 /* challengeCellWithNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E371021F3F443002F0BE9 /* challengeCellWithNib.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		5884C49021F305F90022BFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5884C49621F30C380022BFD6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		72E2DA0CCCA07A5F250A9A8E /* libPods-SkateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1E370B21F3DB9A002F0BE9 /* Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
+		9A1E370D21F3DD86002F0BE9 /* ChallengeCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCells.swift; sourceTree = "<group>"; };
+		9A1E370F21F3F443002F0BE9 /* challengeCellWithNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challengeCellWithNib.swift; sourceTree = "<group>"; };
+		9A1E371021F3F443002F0BE9 /* challengeCellWithNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = challengeCellWithNib.xib; sourceTree = "<group>"; };
 		F83E9D12B051ECCFB0478563 /* Pods-SkateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateApp/Pods-SkateApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,11 +83,15 @@
 			children = (
 				5884C48121F305F40022BFD6 /* AppDelegate.swift */,
 				5884C48321F305F40022BFD6 /* ViewController.swift */,
+				9A1E370B21F3DB9A002F0BE9 /* Challenges.swift */,
+				9A1E370D21F3DD86002F0BE9 /* ChallengeCells.swift */,
 				5884C48521F305F40022BFD6 /* Main.storyboard */,
 				5884C48B21F305F90022BFD6 /* Assets.xcassets */,
 				5884C48D21F305F90022BFD6 /* LaunchScreen.storyboard */,
 				5884C49021F305F90022BFD6 /* Info.plist */,
 				5884C48821F305F40022BFD6 /* SkateApp.xcdatamodeld */,
+				9A1E370F21F3F443002F0BE9 /* challengeCellWithNib.swift */,
+				9A1E371021F3F443002F0BE9 /* challengeCellWithNib.xib */,
 			);
 			path = SkateApp;
 			sourceTree = "<group>";
@@ -155,6 +167,7 @@
 			files = (
 				5884C49721F30C380022BFD6 /* Podfile in Resources */,
 				5884C48F21F305F90022BFD6 /* LaunchScreen.storyboard in Resources */,
+				9A1E371221F3F443002F0BE9 /* challengeCellWithNib.xib in Resources */,
 				5884C48C21F305F90022BFD6 /* Assets.xcassets in Resources */,
 				5884C48721F305F40022BFD6 /* Main.storyboard in Resources */,
 			);
@@ -189,6 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5884C48421F305F40022BFD6 /* ViewController.swift in Sources */,
+				9A1E370E21F3DD86002F0BE9 /* ChallengeCells.swift in Sources */,
+				9A1E370C21F3DB9A002F0BE9 /* Challenges.swift in Sources */,
+				9A1E371121F3F443002F0BE9 /* challengeCellWithNib.swift in Sources */,
 				5884C48A21F305F40022BFD6 /* SkateApp.xcdatamodeld in Sources */,
 				5884C48221F305F40022BFD6 /* AppDelegate.swift in Sources */,
 			);
@@ -336,13 +352,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6WMNWJT2C6;
+				DEVELOPMENT_TEAM = 3SNVMJF5MC;
 				INFOPLIST_FILE = SkateApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = potato.SkateApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreddit.skategame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,13 +371,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6WMNWJT2C6;
+				DEVELOPMENT_TEAM = 3SNVMJF5MC;
 				INFOPLIST_FILE = SkateApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = potato.SkateApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreddit.skategame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
