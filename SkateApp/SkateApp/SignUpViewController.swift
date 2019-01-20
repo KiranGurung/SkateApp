@@ -11,6 +11,7 @@ import Firebase
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     var gradient:CAGradientLayer?
+    var ref = Database.database().reference()
     @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var email: UITextField!
