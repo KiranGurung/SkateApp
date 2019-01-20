@@ -477,6 +477,87 @@
             </objects>
             <point key="canvasLocation" x="2633" y="1229"/>
         </scene>
+        <!--Camera Controller-->
+        <scene sceneID="PXs-25-rTa">
+            <objects>
+                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="qFo-7k-Nla" customClass="CameraController" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVq-na-9DQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-vn-WSp">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XXN-TA-LvL" firstAttribute="bottom" secondItem="h3H-vn-WSp" secondAttribute="bottom" id="3Cn-aQ-628"/>
+                            <constraint firstItem="h3H-vn-WSp" firstAttribute="top" secondItem="XXN-TA-LvL" secondAttribute="top" id="FZ3-XC-Lcv"/>
+                            <constraint firstItem="XXN-TA-LvL" firstAttribute="trailing" secondItem="h3H-vn-WSp" secondAttribute="trailing" id="Fmb-b9-kiB"/>
+                            <constraint firstItem="h3H-vn-WSp" firstAttribute="top" secondItem="XXN-TA-LvL" secondAttribute="top" id="Waa-Rl-AZG"/>
+                            <constraint firstItem="h3H-vn-WSp" firstAttribute="leading" secondItem="XXN-TA-LvL" secondAttribute="leading" id="ok0-Rv-B4b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XXN-TA-LvL"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="h3H-vn-WSp" id="oTG-nT-bAM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpO-89-qS5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="63"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N5M-jc-54Q">
+            <objects>
+                <viewController id="HNc-Ng-hEf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b0u-a8-c7C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8Y-eg-FEX">
+                                <rect key="frame" x="164" y="428" width="46" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="qFo-7k-Nla" kind="presentation" id="YDt-kr-KNS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bOc-0n-vtU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BkD-D8-mpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="103.89805097451276"/>
+        </scene>
+        <!--Challenges-->
+        <scene sceneID="vN3-CB-vhy">
+            <objects>
+                <collectionViewController id="PwJ-bV-gY3" customClass="Challenges" customModule="SkateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eYT-zY-esS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="12" id="Sep-Y4-aj9">
+                            <size key="itemSize" width="370" height="65"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="PwJ-bV-gY3" id="b86-XF-9Cu"/>
+                            <outlet property="delegate" destination="PwJ-bV-gY3" id="Ffw-0L-7df"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Tp-UE-b8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="63"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Stop-Motion" width="60" height="60"/>

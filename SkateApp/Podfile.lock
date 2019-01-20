@@ -27,7 +27,7 @@ PODS:
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - GoogleUtilities/NSData+zlib (~> 5.2)
     - nanopb (~> 0.3)
   - FirebaseAuth (5.2.0):
     - FirebaseAuthInterop (~> 1.0)
@@ -49,7 +49,7 @@ PODS:
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - GoogleUtilities/NSData+zlib (~> 5.2)
     - nanopb (~> 0.3)
   - GoogleUtilities/AppDelegateSwizzler (5.3.7):
     - GoogleUtilities/Environment
@@ -62,9 +62,9 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/Network (5.3.7):
     - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/NSData+zlib
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (5.3.7)"
+  - GoogleUtilities/NSData+zlib (5.3.7)
   - GoogleUtilities/Reachability (5.3.7):
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.7):
@@ -82,24 +82,6 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Bolts
-    - FBSDKCoreKit
-    - FBSDKLoginKit
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseAuth
-    - FirebaseAuthInterop
-    - FirebaseCore
-    - FirebaseDatabase
-    - FirebaseInstanceID
-    - GoogleAppMeasurement
-    - GoogleUtilities
-    - GTMSessionFetcher
-    - leveldb-library
-    - nanopb
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -120,4 +102,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2844efd15f8fc272cd34d340e35e2e4985c8b608
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0
