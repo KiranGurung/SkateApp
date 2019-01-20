@@ -10,18 +10,24 @@ import UIKit
 import Firebase
 
 class HomeViewController: UIViewController {
+    var ref = Database.database().reference()
     
-    @IBOutlet weak var doneButton: UIButton!
-    @IBOutlet weak var flashButton: UIButton!
-    @IBOutlet weak var camView: UIView!
-    @IBOutlet weak var captureButton: UIButton!
-    var previewImage = [UIImage]()
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        previewImage = [UIImage]()
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.nameLabel.text = value?["name"] as? String ?? ""
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     @IBAction func logOutAction(_ sender: Any) {
@@ -35,11 +41,6 @@ class HomeViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initial = storyboard.instantiateInitialViewController()
         UIApplication.shared.keyWindow?.rootViewController = initial
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? PreviewViewController{
-            destination.pImg = self.previewImage
-        }
     }
 }
 
