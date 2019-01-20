@@ -15,19 +15,34 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var gamesLabel: UILabel!
+    @IBOutlet weak var coinsLabel: UILabel!
+    @IBOutlet weak var homeTab: UITabBarItem!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         let userID = Auth.auth().currentUser?.uid
-        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            let value = snapshot.value as? NSDictionary
-            self.nameLabel.text = value?["name"] as? String ?? ""
-            // ...
-        }) { (error) in
+        var name = "null"
+        var coins = "0"
+        var games = "0"
+        _ = ref.child("users").child(userID!).observe(DataEventType.value, with: { (snapshot) in
+            let userDict = snapshot.value as? [String : AnyObject] ?? [:]
+            name = userDict["name"] as? String ?? "null"
+            coins = userDict["points"] as? String ?? "000"
+            games = userDict["games"] as? String ?? "0000"
+            self.nameLabel.text = "Name: " + name
+            self.gamesLabel.text = "Games: " + games
+            self.coinsLabel.text = "Coins: " + coins
+        })
+        { (error) in
             print(error.localizedDescription)
         }
+
+        
+        let appearance = UITabBarItem.appearance()
+        let attributes = [NSAttributedStringKey.font:UIFont(name: "American Typewriter", size: 20)]
+        appearance.setTitleTextAttributes(attributes as [NSAttributedStringKey : Any], for: .normal)
     }
     
     @IBAction func logOutAction(_ sender: Any) {
